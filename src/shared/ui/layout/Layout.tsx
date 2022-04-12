@@ -5,5 +5,5 @@ interface LayoutProps {
 }
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
-  return <>{children}</>;
+  return <div data-testid="layout">{children}</div>;
 };

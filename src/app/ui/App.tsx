@@ -1,5 +1,10 @@
 import { AppDashboard } from '@pages/dashboard';
+import { Layout } from '@shared/ui/layout/Layout';
 
 export function App() {
-  return <AppDashboard />;
+  return (
+    <Layout>
+      <AppDashboard />
+    </Layout>
+  );
 }

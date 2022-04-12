@@ -12,4 +12,14 @@ describe('app component', () => {
 
     expect(screen.getByTestId('dashboard')).toBeInTheDocument();
   });
+
+  it('should wrap every component into layout', () => {
+    render(<App />);
+
+    expect(screen.getByTestId('layout')).toBeInTheDocument();
+
+    expect(screen.getByTestId('layout')).toContainElement(
+      screen.getByTestId('dashboard'),
+    );
+  });
 });
