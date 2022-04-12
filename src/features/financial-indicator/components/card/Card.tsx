@@ -1,3 +1,5 @@
 export const Card = () => {
-  return <h1>Financial Indicator Card</h1>;
+  return (
+    <h1 data-testid="financial-indicator-card">Financial Indicator Card</h1>
+  );
 };
