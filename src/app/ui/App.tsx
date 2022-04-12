@@ -1,3 +1,5 @@
+import { AppDashboard } from '@pages/dashboard';
+
 export function App() {
-  return <h1>Home Screen</h1>;
+  return <AppDashboard />;
 }
