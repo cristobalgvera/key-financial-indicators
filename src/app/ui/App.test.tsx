@@ -1,4 +1,4 @@
-import { render, screen } from '@shared/lib/test/utils';
+import { render, screen } from '@shared/lib/test';
 import { App } from './App';
 
 describe('app component', () => {
