@@ -7,7 +7,7 @@ interface IndicatorsProps {
 
 export function Indicators({ indicators }: IndicatorsProps) {
   return (
-    <div>
+    <div data-testid="financial-indicators">
       {indicators.map((indicator) => (
         <Card key={indicator.codigo}></Card>
       ))}
