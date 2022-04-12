@@ -1,12 +1,12 @@
+import { useGetIndicatorsQuery } from '@features/financial-indicator/api';
 import { FinancialIndicators } from '@features/financial-indicator/components';
-import { FinancialIndicator } from '@features/financial-indicator/models';
 
 export const Dashboard = () => {
-  const indicators: FinancialIndicator[] = [];
+  const { data, isLoading, isError } = useGetIndicatorsQuery();
   return (
     <div data-testid="dashboard">
       <h1>Dashboard</h1>
-      <FinancialIndicators indicators={indicators} />
+      <FinancialIndicators indicators={data ?? []} />
     </div>
   );
 };
