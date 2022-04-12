@@ -10,7 +10,12 @@ export const api = createApi({
       query: () => ({ url: '' }),
       transformResponse: (response: FinancialIndicatorResponse) =>
         Object.values(FINANCIAL_INDICATOR).map((indicator) => {
-          return response[indicator];
+          const rawFinancialIndicator = response[indicator];
+
+          return {
+            ...rawFinancialIndicator,
+            fecha: new Date(rawFinancialIndicator.fecha),
+          };
         }),
     }),
   }),

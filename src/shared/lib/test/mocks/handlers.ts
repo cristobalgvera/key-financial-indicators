@@ -9,7 +9,7 @@ export const handlers = [
       'autor' | 'fecha' | 'version'
     > = {
       autor: 'author',
-      fecha: new Date(),
+      fecha: new Date().toISOString(),
       version: '1.0.0',
     };
 
@@ -19,7 +19,7 @@ export const handlers = [
           codigo: key,
           nombre: key,
           unidad_medida: 'unidad_medida',
-          fecha: new Date(),
+          fecha: new Date().toISOString(),
           valor: Math.random(),
         };
 
