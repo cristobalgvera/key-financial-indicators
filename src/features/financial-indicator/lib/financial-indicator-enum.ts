@@ -7,7 +7,7 @@ export enum FINANCIAL_INDICATOR {
   IPA = 'ipc',
   UTM = 'utm',
   IMACEC = 'imacec',
-  TMP = 'tmp',
+  TPM = 'tpm',
   LIBRA_COPPER = 'libra_cobre',
   UNEMPLOYMENT_RATE = 'tasa_desempleo',
   BITCOIN = 'bitcoin',
